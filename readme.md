@@ -1,3 +1,9 @@
+## Get Started 
+- clone repository 
+- rename .env.example file to .env
+- in CLI type "php artisan key:generate" to generate app id
+- run app with "php artisan serve"
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
