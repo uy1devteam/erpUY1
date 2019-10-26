@@ -13,7 +13,7 @@
 
 
 
-Route::get('/{any}', function(){
+Route::get('/', function(){
     return view('page',[
         'title' => "Page 2 - A little about the Author",
         'author' => json_encode([
@@ -22,4 +22,4 @@ Route::get('/{any}', function(){
                 "code" => "Always keeping it clean"
         ])
     ]);
-})->where('any', '.*');
+});
