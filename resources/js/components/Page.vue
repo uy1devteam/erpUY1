@@ -16,7 +16,8 @@
 
     <script>
         export default {
-            props : ['title', 'author']
+            props : ['title', 'author'],
+            name: 'page'
         }
     </script>
     <style scoped>
