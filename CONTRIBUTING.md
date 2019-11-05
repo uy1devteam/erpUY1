@@ -39,10 +39,12 @@ Les constantes sont ecris en majuscule avec des underscores pour separer les par
 Les classes doivent etres commenter pour permettre leur exploitation. Dans le code la docuementation d'une class est faite sous forme de commentaire, il doit y figurer:
 - le nom de la class: le nom d'une class est suivit d'une petite description semantique(but) de la class
 - le nom de ces attributs: le nom d'un attribut est suivit de son type, de son status(private, public, static ou const) et son sens si possible 
-- le nom de des paramettres: le nom des paramettres est suivit de son type de leur status requi ou pas, si oui de la valeur par defaut 
+- le nom de des paramettres: le nom des paramettres est suivit de son type de leur status requi ou pas, si oui de la valeur par defaut
+- l'auteur: le de nom ou le pseudo de la personne qui a creer la class 
 #### Exemple de definition d'une clase
 ``` php
   /**
+    * @autor: fez2000
     * @name: Account 
     * @desciption: classe qui represente le compte d'un user (etudiant, professeur)
     * @params: 
@@ -77,9 +79,11 @@ Les classes doivent etres commenter pour permettre leur exploitation. Dans le co
 - la description: le nom d'une fonction est suivit d'une petite description semantique(but) de la fonction
 - le nom de des paramettres: le nom des paramettres est suivit de son type de leur status requi ou pas, si oui de la valeur par defaut 
 - le type de retour: pour preciser le type de retour on ecrit un return suivi du type de retour et d'une description si possible
+- l'auteur: le de nom ou le pseudo de la personne qui a creer la fonction 
 #### Exemple de definition d'une clase
 ``` php
   /**
+    * @autor: fez2000
     * @name: inc_account_number 
     * @desciption: fonction qui represente le compte d'un user (etudiant, professeur)
     * @params: void
@@ -93,3 +97,11 @@ Les classes doivent etres commenter pour permettre leur exploitation. Dans le co
   }
 }
 ```
+# Commit
+## regle de commit:
+Pour le travail en commun nous optons pour git comme gestionaire de version. le project est de ce fait organiser en trois branches majeurs master, preprod et dev. 
+ - master: master est la branche de production, elle est faite pour recevoir les versions du projects qui ont passe les testes. note chaque version de prodution stable apres teste des utilisateurs est tager.
+- preprod: proprod est la branche avant production, elle est faite pour recevoir les versions
+de l'application a tester. une fois qu'une version passe les testes elle est automatique mise en production.
+- dev: dev est la branche de developpement, elle  recoit le code en cour de developpenent. chaque developper dois avoir une sous branche sur dev ou il met sont travail en cour puis la partage avec les autres sur dev.
+## hierachie du project:
